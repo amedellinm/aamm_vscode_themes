@@ -1,27 +1,26 @@
-INSTRUCTIONS
+# INSTRUCTIONS
 
-1 - Clone this repo to wherever your VSC extensions are.
-        Example:
-            C:\Users\user\.vscode\extensions\
-        Once cloned:
-            C:\Users\user\.vscode\extensions\aamm_vscode_themes
+1. **Clone this repository** to the folder where your Visual Studio Code extensions are located. For example:
 
-2 - Update the extensions.json (the VSC extensions file) located in the
-    same root folder where you cloned the repo by adding the following
-    extension data:
-        {
-            "identifier": {
-                "id": "undefined_publisher.aamm_vscode_themes"
-            },
-            "location": {
-                "$mid": 1,
-                "path": [REPO PATH],
-                "scheme": "file"
-            },
-            "metadata": {
-                "publisherDisplayName": "AAMM"
-            },
-            "relativeLocation": "aamm_vscode_themes",
-            "version": "1.0.0"
-        },
+   ```plaintext
+   C:\Users\user\.vscode\extensions\
+   ```
+2. Update the extensions.json in the same folder by adding this extension data:
+   ```json
+   {
+    "identifier": {
+        "id": "undefined_publisher.aamm_vscode_themes"
+    },
+    "location": {
+        "$mid": 1,
+        "path": "C:\\Users\\user\\.vscode\\extensions\\aamm_vscode_themes",
+        "scheme": "file"
+    },
+    "metadata": {
+        "publisherDisplayName": "AAMM"
+    },
+    "relativeLocation": "aamm_vscode_themes",
+    "version": "1.0.0"
+   },
+   ```
 
