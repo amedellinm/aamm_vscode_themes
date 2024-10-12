@@ -83,6 +83,13 @@
             }
         },
         {
+            "scope": "entity.other.inherited-class.python",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#a5e672"
+            }
+        },
+        {
             "scope": "invalid.illegal.unrecognized-string-escape.zig",
             "settings": {
                 "fontStyle": "",
@@ -244,33 +251,17 @@
                 "comment.line.double-dash.sql",
                 "comment.line.double-slash.js",
                 "comment.line.double-slash.zig",
+                "comment.line.number-sign.dockerfile",
                 "comment.line.number-sign.python",
+                "comment.line.number-sign.toml",
                 "keyword.todo.zig",
-                "string.quoted.docstring.multi.python"
+                "punctuation.definition.comment.toml",
+                "string.quoted.docstring.multi.python",
+                "string.quoted.docstring.raw.multi.python"
             ],
             "settings": {
                 "fontStyle": "",
                 "foreground": "#62688e"
-            }
-        },
-        {
-            "scope": [
-                "string.multiline.zig",
-                "string.quoted.docstring.raw.single.python",
-                "string.quoted.docstring.single.python",
-                "string.quoted.double.json",
-                "string.quoted.double.sql",
-                "string.quoted.double.zig",
-                "string.quoted.multi.python",
-                "string.quoted.raw.single.python",
-                "string.quoted.single.python",
-                "string.quoted.single.sql",
-                "string.quoted.single.zig",
-                "string.regexp.quoted.single.python"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#aad47f"
             }
         },
         {
@@ -297,6 +288,30 @@
         },
         {
             "scope": [
+                "string.multiline.zig",
+                "string.quoted.binary.multi.python",
+                "string.quoted.binary.single.python",
+                "string.quoted.docstring.raw.single.python",
+                "string.quoted.docstring.single.python",
+                "string.quoted.double.dockerfile",
+                "string.quoted.double.json",
+                "string.quoted.double.sql",
+                "string.quoted.double.zig",
+                "string.quoted.multi.python",
+                "string.quoted.raw.single.python",
+                "string.quoted.single.basic.line.toml",
+                "string.quoted.single.python",
+                "string.quoted.single.sql",
+                "string.quoted.single.zig",
+                "string.regexp.quoted.single.python"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#aad47f"
+            }
+        },
+        {
+            "scope": [
                 "keyword.control.async.zig",
                 "keyword.control.conditional.zig",
                 "keyword.control.flow.python",
@@ -304,13 +319,16 @@
                 "keyword.control.import.python",
                 "keyword.control.repeat.zig",
                 "keyword.control.trycatch.zig",
+                "keyword.other.special-method.dockerfile",
                 "keyword.statement.zig",
                 "keyword.structure.zig",
                 "keyword.top-level.sql",
+                "punctuation.definition.table.toml",
                 "storage.type.class.python",
                 "storage.type.function.lambda.python",
                 "storage.type.function.python",
-                "storage.type.function.zig"
+                "storage.type.function.zig",
+                "support.type.property-name.table.toml"
             ],
             "settings": {
                 "fontStyle": "",
@@ -320,7 +338,6 @@
         {
             "scope": [
                 "entity.name.function.decorator.python",
-                "entity.other.inherited-class.python",
                 "keyword.operator.arithmetic.python",
                 "keyword.operator.arithmetic.zig",
                 "keyword.operator.assignment.python",
@@ -340,6 +357,7 @@
                 "non-alphanumeric.sql",
                 "punctuation.definition.arguments.begin.python",
                 "punctuation.definition.arguments.end.python",
+                "punctuation.definition.array.toml",
                 "punctuation.definition.dict.begin.python",
                 "punctuation.definition.dict.end.python",
                 "punctuation.definition.inheritance.begin.python",
@@ -348,6 +366,8 @@
                 "punctuation.definition.list.end.python",
                 "punctuation.definition.parameters.begin.python",
                 "punctuation.definition.parameters.end.python",
+                "punctuation.definition.table.inline.toml",
+                "punctuation.eq.toml",
                 "punctuation.parenthesis.begin.python",
                 "punctuation.parenthesis.end.python",
                 "punctuation.section.class.begin.python",
@@ -357,6 +377,7 @@
                 "punctuation.separator.annotation.result.python",
                 "punctuation.separator.arguments.python",
                 "punctuation.separator.array.json",
+                "punctuation.separator.array.toml",
                 "punctuation.separator.colon.python",
                 "punctuation.separator.dict.python",
                 "punctuation.separator.dictionary.key-value.json",
@@ -366,6 +387,7 @@
                 "punctuation.separator.parameters.python",
                 "punctuation.separator.period.python",
                 "punctuation.separator.slice.python",
+                "punctuation.separator.table.inline.toml",
                 "source.zig",
                 "variable.parameter.function-call.python"
             ],
