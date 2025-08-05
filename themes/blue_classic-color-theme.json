@@ -327,6 +327,7 @@
                 "keyword.top-level.psql",
                 "punctuation.definition.table.toml",
                 "storage.type.class.python",
+                "storage.type.function.async.python",
                 "storage.type.function.js",
                 "storage.type.function.lambda.python",
                 "storage.type.function.python",
