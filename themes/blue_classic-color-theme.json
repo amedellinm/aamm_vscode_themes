@@ -54,6 +54,27 @@
         "tab.border": "#000000",
         "tab.inactiveBackground": "#252525",
         "tab.inactiveForeground": "#999999",
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiBlue": "#BD93F9",
+        "terminal.ansiBrightBlack": "#4D4D4D",
+        "terminal.ansiBrightBlue": "#CAA9FA",
+        "terminal.ansiBrightCyan": "#9AEDFE",
+        "terminal.ansiBrightGreen": "#5AF78E",
+        "terminal.ansiBrightMagenta": "#FF92D0",
+        "terminal.ansiBrightRed": "#FF6E67",
+        "terminal.ansiBrightWhite": "#E6E6E6",
+        "terminal.ansiBrightYellow": "#F4F99D",
+        "terminal.ansiCyan": "#8BE9FD",
+        "terminal.ansiGreen": "#50FA7B",
+        "terminal.ansiMagenta": "#FF79C6",
+        "terminal.ansiRed": "#FF5555",
+        "terminal.ansiWhite": "#BFBFBF",
+        "terminal.ansiYellow": "#F1FA8C",
+        "terminal.border": "#ff8400",
+        "terminal.foreground": "#9598c2",
+        "terminal.hoverHighlightBackground": "#ffcc0033",
+        "terminalCommandGuide.foreground": "#fc0",
+        "terminalCursor.foreground": "#fc0",
         "titleBar.activeBackground": "#141212",
         "toolbar.hoverOutline": "#3B8EEA",
         "tree.indentGuidesStroke": "#3B8EEA",
@@ -76,13 +97,6 @@
             }
         },
         {
-            "scope": "entity.name.type.class.python",
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#ffd864"
-            }
-        },
-        {
             "scope": "entity.other.inherited-class.python",
             "settings": {
                 "fontStyle": "",
@@ -97,13 +111,6 @@
             }
         },
         {
-            "scope": "keyword.default.zig",
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#ff9494"
-            }
-        },
-        {
             "scope": "meta.fstring.python",
             "settings": {
                 "fontStyle": "",
@@ -111,17 +118,17 @@
             }
         },
         {
-            "scope": "null.sql",
+            "scope": "null.psql",
             "settings": {
                 "fontStyle": "",
                 "foreground": "#0000"
             }
         },
         {
-            "scope": "storage.type.number.python",
+            "scope": "support.function.builtin",
             "settings": {
-                "fontStyle": "",
-                "foreground": "#ff5331"
+                "fontStyle": "bold",
+                "foreground": "#82aaff"
             }
         },
         {
@@ -132,7 +139,51 @@
             }
         },
         {
-            "scope": "variable.parameter.function.language.python",
+            "scope": [
+                "constant.numeric",
+                "keyword.other.unit.px.css"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#f7976b"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.type.class.python",
+                "entity.other.attribute-name.class.css"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ffd864"
+            }
+        },
+        {
+            "scope": [
+                "keyword.default.zig",
+                "support.constant.font-name.css"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ff9494"
+            }
+        },
+        {
+            "scope": [
+                "keyword.other.unit.px.css",
+                "storage.type.number.python"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ff5331"
+            }
+        },
+        {
+            "scope": [
+                "entity.other.attribute-name.html",
+                "support.type.property-name.css",
+                "variable.parameter.function.language.python"
+            ],
             "settings": {
                 "fontStyle": "",
                 "foreground": "#9abeff"
@@ -140,44 +191,13 @@
         },
         {
             "scope": [
-                "keyword.other.sql",
-                "keyword.storage.zig"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#ffbb7f"
-            }
-        },
-        {
-            "scope": [
                 "source.python",
+                "string",
                 "variable.zig"
             ],
             "settings": {
                 "fontStyle": "",
                 "foreground": "#9598c2"
-            }
-        },
-        {
-            "scope": [
-                "entity.name.function.zig",
-                "entity.name.type.zig",
-                "meta.function-call.generic.python"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#82aaff"
-            }
-        },
-        {
-            "scope": [
-                "function.builtin.sql",
-                "support.function.builtin.python",
-                "support.function.builtin.zig"
-            ],
-            "settings": {
-                "fontStyle": "bold",
-                "foreground": "#82aaff"
             }
         },
         {
@@ -193,14 +213,38 @@
         },
         {
             "scope": [
-                "constant.character.escape.python",
-                "constant.character.escape.zig",
-                "constant.character.format.placeholder.other.python",
-                "storage.type.format.python"
+                "comment",
+                "keyword.todo.zig",
+                "punctuation.definition.comment.toml",
+                "string.quoted.docstring"
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#9dffdb"
+                "foreground": "#62688e"
+            }
+        },
+        {
+            "scope": [
+                "constant.language",
+                "constant.other.ellipsis.python",
+                "keyword.constant",
+                "support.constant.property-value.css"
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#ff7050"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.function.js",
+                "entity.name.function.zig",
+                "entity.name.type.zig",
+                "meta.function-call.generic.python"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#82aaff"
             }
         },
         {
@@ -217,26 +261,55 @@
         },
         {
             "scope": [
-                "constant.language.boolean.sql",
-                "constant.language.json.comments",
-                "constant.language.python",
-                "constant.other.ellipsis.python",
-                "keyword.constant.bool.zig",
-                "keyword.constant.default.zig"
+                "constant.other.color.rgb-value.hex.css",
+                "punctuation.definition.constant.css",
+                "string.quoted",
+                "string.regexp",
+                "text.html.derivative"
             ],
             "settings": {
-                "fontStyle": "bold",
-                "foreground": "#ff7050"
+                "fontStyle": "",
+                "foreground": "#aad47f"
             }
         },
         {
             "scope": [
+                "keyword.constraint.psql",
+                "keyword.modifier.psql",
+                "keyword.other.DDL.create.II.psql",
+                "keyword.other.psql",
+                "keyword.storage.zig",
+                "storage.type.js"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ffbb7f"
+            }
+        },
+        {
+            "scope": [
+                "constant.character.escape.python",
+                "constant.character.escape.zig",
+                "constant.character.format.placeholder.other.python",
+                "entity.name.tag.html",
+                "punctuation.definition.tag.begin.html",
+                "punctuation.definition.tag.end.html",
+                "storage.type.format.python"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#9dffdb"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.tag.css",
                 "keyword.type.c.zig",
                 "keyword.type.integer.zig",
                 "keyword.type.zig",
-                "storage.type.sql",
                 "support.type.exception.python",
                 "support.type.property-name.json",
+                "support.type.psql",
                 "support.type.python"
             ],
             "settings": {
@@ -246,85 +319,15 @@
         },
         {
             "scope": [
-                "comment.block",
-                "comment.line.documentation.zig",
-                "comment.line.double-dash.sql",
-                "comment.line.double-slash.js",
-                "comment.line.double-slash.zig",
-                "comment.line.number-sign.dockerfile",
-                "comment.line.number-sign.python",
-                "comment.line.number-sign.toml",
-                "keyword.todo.zig",
-                "punctuation.definition.comment.toml",
-                "string.quoted.docstring.multi.python",
-                "string.quoted.docstring.raw.multi.python"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#62688e"
-            }
-        },
-        {
-            "scope": [
-                "constant.numeric.bin.python",
-                "constant.numeric.binary.zig",
-                "constant.numeric.dec.python",
-                "constant.numeric.decimal.zig",
-                "constant.numeric.float.python",
-                "constant.numeric.float.zig",
-                "constant.numeric.hex.python",
-                "constant.numeric.hexadecimal.zig",
-                "constant.numeric.hexfloat.zig",
-                "constant.numeric.integer.sql",
-                "constant.numeric.invalid.zig",
-                "constant.numeric.json.comments",
-                "constant.numeric.oct.python",
-                "constant.numeric.octal.zig"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#f7976b"
-            }
-        },
-        {
-            "scope": [
-                "string.multiline.zig",
-                "string.quoted.binary.multi.python",
-                "string.quoted.binary.single.python",
-                "string.quoted.docstring.raw.single.python",
-                "string.quoted.docstring.single.python",
-                "string.quoted.double.dockerfile",
-                "string.quoted.double.json",
-                "string.quoted.double.sql",
-                "string.quoted.double.zig",
-                "string.quoted.multi.python",
-                "string.quoted.raw.single.python",
-                "string.quoted.single.basic.line.toml",
-                "string.quoted.single.python",
-                "string.quoted.single.sql",
-                "string.quoted.single.zig",
-                "string.regexp.quoted.single.python"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#aad47f"
-            }
-        },
-        {
-            "scope": [
-                "keyword.control.async.zig",
-                "keyword.control.conditional.zig",
-                "keyword.control.flow.python",
-                "keyword.control.flow.zig",
-                "keyword.control.import.python",
-                "keyword.control.repeat.zig",
-                "keyword.control.trycatch.zig",
+                "keyword",
+                "keyword.operator.expression.of.js",
                 "keyword.other.special-method.dockerfile",
                 "keyword.statement.zig",
                 "keyword.structure.zig",
-                "keyword.top-level.sql",
+                "keyword.top-level.psql",
                 "punctuation.definition.table.toml",
                 "storage.type.class.python",
+                "storage.type.function.js",
                 "storage.type.function.lambda.python",
                 "storage.type.function.python",
                 "storage.type.function.zig",
@@ -338,56 +341,28 @@
         {
             "scope": [
                 "entity.name.function.decorator.python",
-                "keyword.operator.arithmetic.python",
-                "keyword.operator.arithmetic.zig",
-                "keyword.operator.assignment.python",
-                "keyword.operator.bitwise.python",
-                "keyword.operator.bitwise.zig",
-                "keyword.operator.c-pointer.zig",
-                "keyword.operator.comparison.python",
-                "keyword.operator.comparison.zig",
-                "keyword.operator.logical.python",
-                "keyword.operator.python",
-                "keyword.operator.special.zig",
-                "keyword.operator.unpacking.arguments.python",
-                "keyword.operator.unpacking.parameter.python",
-                "keyword.operator.word.sql",
+                "keyword.operator",
+                "meta.brace.round.js",
+                "meta.brace.square.js",
                 "meta.structure.array.json",
                 "meta.structure.dictionary.json",
-                "non-alphanumeric.sql",
-                "punctuation.definition.arguments.begin.python",
-                "punctuation.definition.arguments.end.python",
+                "non-alphanumeric.psql",
+                "punctuation.definition.arguments",
                 "punctuation.definition.array.toml",
-                "punctuation.definition.dict.begin.python",
-                "punctuation.definition.dict.end.python",
-                "punctuation.definition.inheritance.begin.python",
-                "punctuation.definition.inheritance.end.python",
-                "punctuation.definition.list.begin.python",
-                "punctuation.definition.list.end.python",
-                "punctuation.definition.parameters.begin.python",
-                "punctuation.definition.parameters.end.python",
+                "punctuation.definition.dict",
+                "punctuation.definition.inheritance",
+                "punctuation.definition.list",
+                "punctuation.definition.parameters",
                 "punctuation.definition.table.inline.toml",
                 "punctuation.eq.toml",
-                "punctuation.parenthesis.begin.python",
-                "punctuation.parenthesis.end.python",
-                "punctuation.section.class.begin.python",
-                "punctuation.section.function.begin.python",
-                "punctuation.section.function.lambda.begin.python",
-                "punctuation.separator.annotation.python",
-                "punctuation.separator.annotation.result.python",
-                "punctuation.separator.arguments.python",
-                "punctuation.separator.array.json",
-                "punctuation.separator.array.toml",
-                "punctuation.separator.colon.python",
-                "punctuation.separator.dict.python",
-                "punctuation.separator.dictionary.key-value.json",
-                "punctuation.separator.dictionary.pair.json",
-                "punctuation.separator.element.python",
-                "punctuation.separator.inheritance.python",
-                "punctuation.separator.parameters.python",
-                "punctuation.separator.period.python",
-                "punctuation.separator.slice.python",
-                "punctuation.separator.table.inline.toml",
+                "punctuation.parenthesis",
+                "punctuation.section.class",
+                "punctuation.section.function",
+                "punctuation.section.function.lambda",
+                "punctuation.section.property-list.begin.bracket.curly.css",
+                "punctuation.section.property-list.end.bracket.curly.css",
+                "punctuation.separator",
+                "punctuation.terminator",
                 "source.zig",
                 "variable.parameter.function-call.python"
             ],

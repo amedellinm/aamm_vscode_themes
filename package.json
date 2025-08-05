@@ -1,21 +1,24 @@
 {
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "AAMM Blue Classic",
-                "path": "./themes/blue_classic-color-theme.json",
-                "uiTheme": "vs-dark"
-            }
-        ]
-    },
-    "description": "Custom VSCode themes by AAMM",
-    "displayName": "AAMM VSCode Themes",
-    "engines": {
-        "vscode": "^1.77.3"
-    },
-    "name": "aamm_vscode_themes",
-    "version": "1.0.0"
+	"__metadata": {
+		"size": 138014
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "AAMM Blue Classic",
+				"path": "./themes/blue_classic-color-theme.json",
+				"uiTheme": "vs-dark"
+			}
+		]
+	},
+	"description": "Custom VSCode themes by AAMM",
+	"displayName": "AAMM Themes",
+	"engines": {
+		"vscode": "^1.77.3"
+	},
+	"name": "aamm-themes",
+	"version": "1.0.0"
 }
